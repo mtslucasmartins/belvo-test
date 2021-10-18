@@ -16,7 +16,7 @@ export class BelvoService {
   //       in the future.
   // DONE
   public async requestAccessToken(): Promise<any> {
-    return fetch(`${environment.service_url}/api/v1/belvo/token`, {
+    return fetch(`https://api-belvo-staging.herokuapp.com/api/v1/belvo/token`, {
       method: 'GET',
     })
       .then((response) => response.json())
@@ -32,7 +32,7 @@ export class BelvoService {
     username: string
   ): Promise<any> {
     return fetch(
-      `${environment.service_url}/api/v1/belvo/widget/callback/success`,
+      `https://api-belvo-staging.herokuapp.com/api/v1/belvo/widget/callback/success`,
       {
         method: 'POST',
         headers: {
