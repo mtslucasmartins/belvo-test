@@ -8,6 +8,7 @@ export class WidgetConfigService {
   public config(username: any) {
     // TODO: this boy here should be getting some attributes from environment variables too.
     // TODO: isolate this variables and the creation of this object on a isolated service.
+    // DONE
     const config: any = {
       callback: (link: any, institution: any) =>
         successCallbackFunction(link, institution),
