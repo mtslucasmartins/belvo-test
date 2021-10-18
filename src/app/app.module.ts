@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent, WindowRef } from './app.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    WindowRef
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
